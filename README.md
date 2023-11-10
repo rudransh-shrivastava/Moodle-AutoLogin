@@ -18,4 +18,10 @@
 - Done! From now on everytime you click on the Login Button from the moodle page you will be auto logged in.
 
 ## Screenshots
+### Extension
+
+![image](https://github.com/rudransh-shrivastava/Moodle-AutoLogin/assets/125893371/5bbbab4a-8a49-483a-bac2-d38056753998)
+
+### Login Page
+![image](https://github.com/rudransh-shrivastava/Moodle-AutoLogin/assets/125893371/41549c64-91cc-4022-b54c-00c3817dad54)
 
