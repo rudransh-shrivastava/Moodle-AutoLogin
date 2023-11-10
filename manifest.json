@@ -10,7 +10,7 @@
   "description": "Auto Login on Moodle when you click Login button",
   "options_ui": {
     "page": "popup.html",
-    "open_in_tab": true
+    "open_in_tab": false
   },
   "permissions": [
     "storage",
@@ -30,7 +30,7 @@
   },
   "background": {
     "scripts": ["background.js"],
-    "persistent": false
+    "persistent": true
   },
 
   "content_scripts": [
