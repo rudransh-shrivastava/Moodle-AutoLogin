@@ -1,13 +1,15 @@
 browser.webNavigation.onCompleted.addListener(function (details) {
     browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        var currentTab = tabs[0];
-        var username = browser.storage.sync.get('login');
-        var password = browser.storage.sync.get('password');
+        let currentTab = tabs[0];
+        let username = browser.storage.sync.get('username');
+        let password = browser.storage.sync.get('password');
+
+        // Display Popup
         // Listen for messages from content scripts or other parts of the extension
         browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
             // Check if the message is requesting to open the popup
             if (message.action === "openPopup") {
-                // Set the popup to a blank HTML page
+                // Set the popup to popup.html
                 browser.browserAction.setPopup({ popup: "popup.html" });
 
                 // Open the extension options page, triggering the popup to open
@@ -19,6 +21,7 @@ browser.webNavigation.onCompleted.addListener(function (details) {
                 }, 100);
             }
         });
+        // Execute login.js if username and password exist in the browser storage
         if (username != null && password != null) {
             browser.tabs.executeScript(currentTab.id, {
                 file: "/login.js",
