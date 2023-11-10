@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Close the extension popup on submit
         window.close();
     });
+
     // Clear Button Logic
     clearButton.addEventListener("click", (e) => {
         e.preventDefault();
@@ -27,5 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('form').style.display = 'none';
         document.querySelector('#dataCleared').style.display = 'block';
     })
-
 });
