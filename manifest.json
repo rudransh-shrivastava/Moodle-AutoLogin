@@ -18,8 +18,7 @@
     "webNavigation",
     "webRequest",
     "webRequestBlocking",
-    "http://*/*",
-    "https://*/*"
+    "https://moodle.mitsgwalior.in/login/index.php"
   ],
   "browser_action": {
     "default_icon": "icon.jpg",
