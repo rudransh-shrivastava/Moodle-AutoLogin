@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('Credentials Stored');
         });
 
+        // Display Messages to the User
+        document.querySelector('form').style.display = 'none';
+        document.querySelector('#successMessage').style.display = 'block';
+        document.querySelector('#successMessageTwo').style.display = 'block';
         // Close the extension popup on submit
         window.close();
     });
@@ -20,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     clearButton.addEventListener("click", (e) => {
         e.preventDefault();
         browser.storage.sync.clear();
+        document.querySelector('form').style.display = 'none';
+        document.querySelector('#dataCleared').style.display = 'block';
     })
 
 });
