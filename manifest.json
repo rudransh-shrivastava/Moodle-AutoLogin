@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "MoodleAutoLogin",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "moodle@rudransh.com"
+    }
+  },
+  "description": "Auto Login on Moodle when you click Login button",
+  "options_ui": {
+    "page": "popup.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://moodle.mitsgwalior.in/login/index.php"],
+      "js": ["login.js"]
+    }
+  ]
+
+}
+
