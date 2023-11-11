@@ -21,11 +21,11 @@
     "https://moodle.mitsgwalior.in/login/index.php"
   ],
   "browser_action": {
-    "default_icon": "icon.jpg",
+    "default_icon": "/icon.jpg",
     "default_popup": "popup.html"
   },
   "icons": {
-    "48": "icon.png"
+    "48": "icon.jpg"
   },
   "background": {
     "scripts": ["background.js"],
