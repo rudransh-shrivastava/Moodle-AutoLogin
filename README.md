@@ -2,9 +2,9 @@
 
 - This Plugin Automatically logs you into moodle, yes it's a pain when moodle auto logs you out...
 
-- For now this plugin is only available for firefox, chrome users will have to wait a few days for me to make it compatible with chrome :)
+- This plugin is now available for Firefox AND Chrome !
 
-- I am waiting for the plugin to be approved by the firefox team before adding a url for the download
+- I am waiting for the plugin to be approved by the Firefox Team & Google Chrome Team before adding a url for the download
 
 - This plugin only works with the MITS Gwalior Moodle for now, other moodle websites will be supported in the later versions(open an issue if you want me to do that).
 
