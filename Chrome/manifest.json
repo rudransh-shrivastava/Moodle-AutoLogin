@@ -1,0 +1,35 @@
+{
+  "name": "MoodleAutoLogin",
+  "version": "1.0",
+  "description": "Auto Login on Moodle when you click Login button",
+  "manifest_version": 3,
+  "author": "Rudransh Shrivastava",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation",
+    "webRequest",
+    "declarativeNetRequest",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://moodle.mitsgwalior.in/login/index.php"],
+      "js": ["login.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
