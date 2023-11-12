@@ -1,10 +1,16 @@
 # Moodle Auto Login Extension
 
-- This Extension Automatically logs you into moodle, yes it's a pain when moodle auto logs you out...
+- This Extension Automatically Logs you into moodle, yes it's a pain when moodle auto logs you out...
 
 - This extension is now available for Firefox AND Chrome !
 
-- I am waiting for the extension to be approved by the Firefox Team & Google Chrome Team before adding a url for the download
+## Downloads
+
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/moodle-automatic-login/
+
+- Firefox Android: Coming Soon...
+
+- Chrome: Chrome Webstore requires a developer account to publish extensions which requires me to pay $5 but you can easily manually install the extension yourself too, heres the steps to do just that: https://github.com/rudransh-shrivastava/Moodle-AutoLogin/blob/main/Chrome/README.md
 
 - This extension only works with the MITS Gwalior Moodle for now, other moodle websites will be supported in the later versions(open an issue if you want me to do that).
 
