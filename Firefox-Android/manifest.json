@@ -4,7 +4,7 @@
   "version": "1.0",
   "browser_specific_settings": {
     "gecko": {
-      "id": "MoodleAutoLogin@rudransh-shrivastava.github.io"
+      "id": "MoodleAutoLoginAndroid@rudransh-shrivastava.github.io"
     }
   },
   "description": "Auto Login on Moodle when you click Login button",

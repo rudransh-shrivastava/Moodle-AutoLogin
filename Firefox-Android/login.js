@@ -39,5 +39,5 @@ browser.storage.sync.get(['username', 'password'])
     });
 function notifyUser() {
 
-    window.alert("Please Setup Login and Password, To do so >> Click on 3 dots on the bottom right >> Click Add-ons >> Select MoodleAutoLogin >> Fill the details and Click Save Data.");
+    window.alert("Please Setup Login and Password, To do so >> Click on 3 dots on the top right >> Click Add-ons >> Select MoodleAutoLogin >> Fill the details and Click Save Data.");
 }
