@@ -20,11 +20,10 @@ chrome.storage.sync.get(['username', 'password'])
                     if (loginForm) {
                         loginForm.submit();
                     }
-                    // Comment the Following lines during development to prevent login.
-                    if (loginErrorMessage !== null) {
+                    if (loginErrorMessage.textContent.trim() === "Invalid login, please try again") {
                         // open the popup for login
-                        window.stop();
                         chrome.runtime.sendMessage({ action: "openPopup" });
+                        window.stop();
                     }
                 }
             } else {
