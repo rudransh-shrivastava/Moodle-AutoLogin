@@ -15,18 +15,18 @@ browser.storage.sync.get(['username', 'password'])
 
                     // Trigger the form submission if login error message is not present
 
+                    let loginForm = document.getElementById('login');
+                    console.log(loginForm);
+                    if (loginForm) {
+                        loginForm.submit();
+                    }
                     // Comment the Following lines during development to prevent login.
-                    if (loginErrorMessage == null) {
-                        let loginForm = loginInput.closest('form');
-                        if (loginForm) {
-                            loginForm.submit();
-                        }
-                    } else {
-                        // Else notify the user
+                    if (loginErrorMessage !== null) {
+                        // open the popup for login
                         window.stop();
                         notifyUser();
+
                     }
-                    // Till here
                 }
             } else {
                 // Notify the user
