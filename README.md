@@ -8,7 +8,7 @@
 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/moodle-automatic-login/
 
-- Firefox Android: Coming Soon...
+- Firefox Android: https://addons.mozilla.org/en-US/firefox/addon/moodle-auto-login-android/
 
 - Chrome: Chrome Webstore requires a developer account to publish extensions which requires me to pay $5 but you can easily manually install the extension yourself too, heres the steps to do just that: https://github.com/rudransh-shrivastava/Moodle-AutoLogin/blob/main/Chrome/README.md
 
