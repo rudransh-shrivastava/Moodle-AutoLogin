@@ -1,6 +1,6 @@
 {
   "name": "MoodleAutoLogin",
-  "version": "2.0",
+  "version": "2.1",
   "description": "Auto Login on Moodle when you click Login button",
   "manifest_version": 3,
   "author": "Rudransh Shrivastava",
